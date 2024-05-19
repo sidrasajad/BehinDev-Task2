@@ -1,0 +1,141 @@
+/* Menu styling */
+nav
+{
+    height: 100px;
+    background: burlywood;
+}
+.menu-container
+{
+    width: 100%;
+    max-width: 1152px; 
+    margin: 0 auto;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-wrapper ul.nav-list
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.nav-wrapper ul.nav-list li
+{
+    margin-left: 30px;
+    padding: 20px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.nav-wrapper ul.nav-list li a
+{
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-wrapper ul.nav-list li a:hover
+{
+    color: #007bff;
+    text-decoration:underline;
+}
+.nav-wrapper ul.nav-list li.active a
+{
+    color: green;
+}
+nav ul.dropdown-list
+{
+    list-style-type: none;
+    display: block;
+    background: whitesmoke;
+    padding: 6px 16px;
+    position: absolute;
+    width: max-content;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+.nav-wrapper ul.dropdown-list li
+{
+    margin-left: 5px;
+    padding: 5px 0;
+    text-transform: none;
+}
+.nav-wrapper ul.dropdown-list li a
+{
+    color: purple;
+}
+.nav-wrapper ul.nav-list li:hover .dropdown-list
+{
+    opacity: 1;
+    pointer-events: auto;
+    animation: moveUp 0.5s ease-in-out forwards;
+}
+.nav-wrapper .nav-list li .btn
+{
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+.nav-wrapper .nav-list li .btn a
+{
+    color: white;
+    padding: 15px;
+}
+.nav-wrapper .nav-list li .btn:hover a
+{
+    color: #333;
+}
+/* Responsive menu */
+@media (max-width: 860px)
+{
+    .nav-wrapper
+    {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hamburger
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+    .hamburger span
+    {
+        background: #333;
+        width: 28px;
+        height: 2px;
+        margin-bottom: 8px;
+    }
+    .nav-wrapper ul.nav-list 
+    {
+        display: none;
+    }
+    .nav-wrapper ul.nav-list.open 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dropdown-list
+    {
+        position: relative;
+        background: transparent;
+        text-align: center;
+        height: 0;
+        overflow-y: hidden;
+        transition: opacity 0.5s ease-in-out;
+        padding-top: 0;
+    }
+    .nav-list li:hover .dropdown-list
+    {
+        height: max-content;
+
+    }
+}
