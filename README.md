@@ -25,7 +25,7 @@ A project that demonstrates an error-free and responsive header built using HTML
 
 ## Screenshots
 
-![Responsive Header Screenshot](images/screenshot-01.PNG)
+![Responsive Header Screenshot](images/screenshort-01.PNG)
 
 ## Technologies Used
 
