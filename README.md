@@ -23,7 +23,7 @@ A project that demonstrates an error-free and responsive header built using HTML
 - **Cross-Browser Compatibility:**
 - Works seamlessly across different browsers.
 
-## Screenshots
+## Screenshot
 
 ![Responsive Header Screenshot](images/screenshort-01.PNG)
 
