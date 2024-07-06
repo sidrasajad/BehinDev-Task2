@@ -1,6 +1,6 @@
 # Error-Free and Responsive Header
 
-A project that demonstrates an error-free and responsive header built using HTML, CSS, and JavaScript. This project was developed as part of my internship at CodeSoft.
+A project that demonstrates an error-free and responsive header built using HTML, CSS, and JavaScript. This project was developed as part of my internship at BehinDev.
 
 ## 🔍 Key Features:
 
@@ -25,7 +25,7 @@ A project that demonstrates an error-free and responsive header built using HTML
 
 ## Screenshots
 
-![Responsive Header Screenshot](images/screenshot.png)
+![Responsive Header Screenshot](images/screenshot=01.PNG)
 
 ## Technologies Used
 
